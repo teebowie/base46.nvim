@@ -1,0 +1,1 @@
+# base46.nvim
