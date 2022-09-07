@@ -1,6 +1,5 @@
 -- integration module names
 return {
-    "bufferline",
     "cmp",
     "devicons",
     "feline",
