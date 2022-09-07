@@ -7,7 +7,7 @@ function M.merge_tbl(tbl1, tbl2)
 end
 
 function M.get_colors(base, theme_name)
-    local path = "hl_themes." .. theme_name
+    local path = "base46.hl_themes." .. theme_name
     local present, theme = pcall(require, path)
 
     if not present then
@@ -91,10 +91,10 @@ function M.load_theme(user_opts)
     end
 
     -- term hls
-    require("base46_term").set_hls(colors)
+    require("base46.base46_term").set_hls(colors)
 
     -- get hls
-    local hls = require("base46_hls").get_hls(colors, opts.transparency)
+    local hls = require("base46.base46_hls").get_hls(colors, opts.transparency)
 
     -- actually highlight stuff
     for hl, col in pairs(hls) do
